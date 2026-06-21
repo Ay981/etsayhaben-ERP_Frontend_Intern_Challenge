@@ -38,7 +38,7 @@ export function useEmployees() {
 
   // Combine local search + global department filter on the fetched data
   const filtered = employees
-    .filter((employee) => employee.name.toLowerCase().includes(search.toLowerCase()))
+    .filter((employee) => employee.name.toLowerCase().includes(debouncedSearch.toLowerCase()))
     .filter((employee) => !selectedDepartment || employee.department === selectedDepartment)
 
   async function removeEmployee(id: string) {

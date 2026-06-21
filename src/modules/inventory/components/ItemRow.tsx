@@ -27,7 +27,7 @@ export function ItemRow({ item, onDelete }: ItemRowProps) {
   return (
     <>
       <tr
-        className={`border-b cursor-pointer ${isLowStock ? 'bg-red-50' : ''}`}
+        className={`border-b cursor-pointer ${isLowStock ? 'bg-red-50 text-gray-900' : ''}`}
         onClick={() => setIsExpanded(!isExpanded)}
       >
         <td className="p-2" onClick={(e) => e.stopPropagation()}>

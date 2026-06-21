@@ -27,7 +27,7 @@ export function EmployeeRow({ employee, onDelete }: EmployeeRowProps) {
   return (
     <>
       <tr
-        className={`border-b cursor-pointer ${isOnLeave ? 'bg-yellow-50' : ''}`}
+        className={`border-b cursor-pointer ${isOnLeave ? 'bg-yellow-50 text-gray-900' : ''}`}
         onClick={() => setIsExpanded(!isExpanded)}
       >
         <td className="p-2" onClick={(e) => e.stopPropagation()}>
